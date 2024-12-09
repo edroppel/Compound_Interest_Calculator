@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <header>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXP95LykehTgOdIrwAd_5oNAx70FTYKgx-A&s"
+          alt="Description of image"
+        />
+        <div>Compound Interest</div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbXhpUCtXkCSWv4vSVRUzDwki47xNRubuN3A&s"
+          alt="Description of image"
+        />
+      </header>
+      <main>
+        <form>
+          <div>Principal</div>
+          <input id="principal" />
+          <div>Period</div>
+          <select id="period">
+            <option value="360">Daily</option>
+            <option value="12">Monthly</option>
+            <option value="4">Quarterly</option>
+            <option value="2">Semiannually</option>
+            <option value="1">Yearly</option>
+          </select>
+          <div>Interest %</div>
+          <div>
+            <input
+              type="range"
+              id="apr"
+              min="0"
+              max="100"
+              value="2.5"
+              step="0.1"
+            />
+            <output id="aprText">2.5</output>
+          </div>
+          <div>Years</div>
+          <input id="years" />
+          <p>Interest accumulated is $<output id="accumulated"></output></p>
+          <p>Total at end is $<output id="amount"></output></p>
+        </form>
+      </main>
+      <footer>
+        <div>© 2024</div>
+        <div>
+          <a
+            href="https://codesandbox.io/p/sandbox/quiet-meadow-zzxmm6?layout=%257B%2522sidebarPanel%2522%253A%2522EXPLORER%2522%252C%2522rootPanelGroup%2522%253A%257B%2522direction%2522%253A%2522horizontal%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522id%2522%253A%2522ROOT_LAYOUT%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522UNKNOWN%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522cm0eh9jmb00063b6i4ccju1ve%2522%252C%2522sizes%2522%253A%255B100%255D%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522EDITOR%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522EDITOR%2522%252C%2522id%2522%253A%2522cm0eh9jmb00023b6ilbssyx72%2522%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522direction%2522%253A%2522horizontal%2522%252C%2522id%2522%253A%2522SHELLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522SHELLS%2522%252C%2522id%2522%253A%2522cm0eh9jmb00033b6iy43dr1j6%2522%257D%255D%257D%255D%257D%252C%257B%2522type%2522%253A%2522PANEL_GROUP%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522direction%2522%253A%2522vertical%2522%252C%2522id%2522%253A%2522DEVTOOLS%2522%252C%2522panels%2522%253A%255B%257B%2522type%2522%253A%2522PANEL%2522%252C%2522contentType%2522%253A%2522DEVTOOLS%2522%252C%2522id%2522%253A%2522cm0eh9jmb00053b6iwwy66r8x%2522%257D%255D%257D%255D%252C%2522sizes%2522%253A%255B50%252C50%255D%257D%252C%2522tabbedPanels%2522%253A%257B%2522cm0eh9jmb00023b6ilbssyx72%2522%253A%257B%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0eh9jma00013b6ivrzz5sy5%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522FILE%2522%252C%2522filepath%2522%253A%2522%252Findex.html%2522%252C%2522state%2522%253A%2522IDLE%2522%252C%2522initialSelections%2522%253A%255B%257B%2522startLineNumber%2522%253A17%252C%2522startColumn%2522%253A10%252C%2522endLineNumber%2522%253A17%252C%2522endColumn%2522%253A10%257D%255D%257D%255D%252C%2522id%2522%253A%2522cm0eh9jmb00023b6ilbssyx72%2522%252C%2522activeTabId%2522%253A%2522cm0eh9jma00013b6ivrzz5sy5%2522%257D%252C%2522cm0eh9jmb00053b6iwwy66r8x%2522%253A%257B%2522id%2522%253A%2522cm0eh9jmb00053b6iwwy66r8x%2522%252C%2522activeTabId%2522%253A%2522cm0yn671200423b6in4321jhd%2522%252C%2522tabs%2522%253A%255B%257B%2522id%2522%253A%2522cm0eh9jmb00043b6ixbfzeq05%2522%252C%2522mode%2522%253A%2522permanent%2522%252C%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%257D%252C%257B%2522type%2522%253A%2522UNASSIGNED_PORT%2522%252C%2522port%2522%253A0%252C%2522id%2522%253A%2522cm0eha02n000v3b6ipnvzwyib%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%252C%257B%2522type%2522%253A%2522DOCS%2522%252C%2522id%2522%253A%2522cm0yh45dz00693b6illbtluki%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%252C%257B%2522type%2522%253A%2522DOCS%2522%252C%2522id%2522%253A%2522cm0yh463r006i3b6iac95w2o4%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%252C%257B%2522type%2522%253A%2522DOCS%2522%252C%2522id%2522%253A%2522cm0yh46p1006p3b6ievbxlxaf%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%252C%257B%2522type%2522%253A%2522SANDBOX_INFO%2522%252C%2522isCloud%2522%253Afalse%252C%2522id%2522%253A%2522cm0yn671200423b6in4321jhd%2522%252C%2522mode%2522%253A%2522permanent%2522%257D%255D%257D%252C%2522cm0eh9jmb00033b6iy43dr1j6%2522%253A%257B%2522tabs%2522%253A%255B%255D%252C%2522id%2522%253A%2522cm0eh9jmb00033b6iy43dr1j6%2522%257D%257D%252C%2522showDevtools%2522%253Atrue%252C%2522showShells%2522%253Afalse%252C%2522showSidebar%2522%253Atrue%252C%2522sidebarPanelSize%2522%253A15%257D"
+            >Code</a
+          >
+        </div>
+      </footer>
+    </article>
+  </body>
+</html>

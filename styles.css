@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans";
+  background-color: red;
+}
+
+article {
+  display: grid;
+  grid-template: 100px auto 20px / 100%;
+  height: 100vh;
+}
+
+img {
+  margin: 20px;
+  padding: 20px;
+  height: 70px;
+  width: 100px;
+  width: 10% auto;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: red;
+  text-align: center;
+}
+
+header {
+  justify-content: space-evenly;
+  color: white;
+  border: 4px dashed rgb(0, 0, 0);
+  text-shadow: 4px 4px 8px black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 30px;
+  font-weight: 500;
+  animation: titlespin 1s linear;
+}
+
+@keyframes titlespin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 5em 175px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 1s 100ms;
+}
+
+form:hover {
+  transform: translateY(100px) scale(1.5);
+}
+
+main {
+  text-align: center;
+  padding: 20px 10px 0px 10px;
+  overflow: scroll;
+  background-color: white;
+  background-image: linear-gradient(
+    rgba(255, 0, 0, 0.537),
+    rgb(255, 255, 255),
+    rgba(255, 0, 0, 0.537)
+  );
+  transition: background-color 1s 100ms;
+}
+
+main:hover {
+  background-color: red;
+}
+
+#apr {
+  width: 105px;
+  text-align: justify;
+}
+
+footer {
+  justify-content: space-between;
+  border: 2px dashed rgb(0, 0, 0);
+  font-style: italic;
+}

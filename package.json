@@ -1,0 +1,15 @@
+{
+  "name": "Compound Interest",
+  "version": "1.0.0",
+  "description": "A web app for computing compound interest",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Edward Droppelman",
+  "sources": [
+    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fserrarigroup.com%2Fpower-of-compound-interest-in-wealth-management%2F&psig=AOvVaw38oAeRHI2H0gnaStPoJViL&ust=1726276721552000&source=images&cd=vfe&opi=89978449&ved=0CAMQjB1qFwoTCMjNwongvogDFQAAAAAdAAAAABAE",
+    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.getsmarteraboutmoney.ca%2Fcalculators%2Fcompound-interest-calculator%2F&psig=AOvVaw38oAeRHI2H0gnaStPoJViL&ust=1726276721552000&source=images&cd=vfe&opi=89978449&ved=0CAMQjB1qFwoTCMjNwongvogDFQAAAAAdAAAAABAK"
+  ]
+}
